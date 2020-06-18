@@ -46,7 +46,7 @@ Draw situations are not implemented.
    1. f2:f3 
    2. e7:e5
    3. g2:g4
-   4. d8:h4
+   4. d8:h4 checkmate
  - Castling: 
    1. e2:e4 
    2. e7:e5 
@@ -54,7 +54,7 @@ Draw situations are not implemented.
    4. a7:a6 
    5. g1:h3 
    6. a6:a5 
-   7.e1:h1
+   7. e1:h1 king-side castling
  - Pawn promotion: 
    1. e2:e4
    2. f7:f5
@@ -66,7 +66,13 @@ Draw situations are not implemented.
    8. e7:e6 
    9. f6:f7 
    10. e8:e7 
-   11. f7:f8
-
+   11. f7:f8 pawn promotion
+ - En passant:
+   1. e2:e4
+   2. h7:h5
+   3. e4:e5
+   4. h5:h4
+   5. g2:g4
+   6. h4:g3 en passant
 
 
