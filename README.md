@@ -18,7 +18,7 @@ Draw situations are not implemented.
 
 5. After all your actions you will get feedback in the OUTPUT section
 
-6. If you want to get messages from API in json format, run index_json keys are : 
+6. If you want to get messages from API in json format, run index_json.  Keys are : 
     - newGame(1/0);
     - move('your_move');
     - getState(1/0);
