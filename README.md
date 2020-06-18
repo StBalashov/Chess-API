@@ -41,7 +41,32 @@ Draw situations are not implemented.
     - getState(1/0);
     - promotionFigure('q'/'r'/'b'/'n');
   
-
+# Useful test cases:
+ - Checkmate: 
+   1. f2:f3 
+   2. e7:e5
+   3. g2:g4
+   4. d8:h4
+ - Castling: 
+   1. e2:e4 
+   2. e7:e5 
+   3. f1:c4 
+   4. a7:a6 
+   5. g1:h3 
+   6. a6:a5 
+   7.e1:h1
+ - Pawn promotion: 
+   1. e2:e4
+   2. f7:f5
+   3. e4:f5 
+   4. g7:g6 
+   5. a2:a3 
+   6. f8:g7 
+   7. f5:f6 
+   8. e7:e6 
+   9. f6:f7 
+   10. e8:e7 
+   11. f7:f8
 
 
 
