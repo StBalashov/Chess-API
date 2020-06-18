@@ -1,5 +1,7 @@
 # Chess API
 Backend for playing a chess game.
+- Used [Forsyth–Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) to describe game state.
+- Figures are encoded in algebraic chess notation (Queen - q, King - k, knight - n, etc.)
 
 # Rules implemeted:
 Basic chess rules, en passant, castling, pawn promotion \n
