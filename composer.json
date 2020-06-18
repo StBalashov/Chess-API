@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/Chess-API",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Steven Balashov",
+      "email": "stepka.balashov@gmail.com"
+    }
+  ],
+  "require": {
+    "predis/predis": "1.1.1",
+    "ext-ctype": "*",
+    "phpunit/phpunit": "9.2.2",
+    "ext-json": "*",
+    "vlucas/phpdotenv": "v5"
+  }
+}
