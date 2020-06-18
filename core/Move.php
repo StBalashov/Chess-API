@@ -231,7 +231,7 @@ class Move
         if ($this->figureType == 'p') {
             if ($this->isCapture($game)) {
                 $this->figure->moveType = 'capture';
-            } elseif ($this->figure->moveType = 'capture') { // КОСТЫЛЬ!!!!
+            } elseif ($this->figure->moveType = 'capture') {
                 $this->figure->moveType = 'initial';
             }
         }
