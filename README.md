@@ -16,7 +16,7 @@ Draw situations are not implemented.
   - unpack it, then in terminal in redis directory run make command.
   - then type
   ```
-  redis-server start
+  $ redis-server start
   ```
   
 - run index.php or index_json.php to talk with api
