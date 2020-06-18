@@ -24,7 +24,7 @@ class Pawn extends Figure
             'ordinar_W' => [[0, 1]],
             'ordinar_b' => [[0, -1]],
             'capture_W' => [[-1, 1], [1, 1]],
-            'capture_b' => [[-1, 1], [1, 1]]];
+            'capture_b' => [[-1, -1], [1, -1]]];
         $this->shortname = $color == 'W' ? 'P' : 'p';
         $this->moveType = 'initial';
     }
