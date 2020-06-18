@@ -24,7 +24,7 @@ $isPawnPick = false;
 $message = $moveErr = $stateErr = '';
 $extended_message = "";
 
-if (isset($_POST['newGame'])) {
+if ($_POST['newGame']) {
     $game = new Game();
     $message = 'New Game started! ';
     $extended_message = $game->getFen();
@@ -65,7 +65,7 @@ if ($_POST['move']) {
     }
 }
 
-if (isset($_POST['promotionFigure'])) {
+if ($_POST['promotionFigure']) {
     $game_serialized = json_decode($redis->get('game'));
     $game = unserialize($game_serialized);
     if ($game) {
@@ -82,7 +82,7 @@ if (isset($_POST['promotionFigure'])) {
     }
 
 }
-if (isset($_POST['getState'])) {
+if ($_POST['getState']) {
     $game_serialized = json_decode($redis->get('game'));
     $game = unserialize($game_serialized);
     if ($game) {
