@@ -1,8 +1,8 @@
 <?php
 
 require_once 'Move.php';
-foreach (glob("figures/*.php") as $filename) {
-    if ($filename != 'figures/Figure.php') {
+foreach (glob("core/figures/*.php") as $filename) {
+    if ($filename != '/core/figures/Figure.php') {
         require_once $filename;
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-require_once 'Game.php';
+require_once 'core/Game.php';
 require_once 'vendor/autoload.php';
-error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
 
 $dotenv = Dotenv\Dotenv::createImmutable(dirname('.env'));
 $dotenv->load();

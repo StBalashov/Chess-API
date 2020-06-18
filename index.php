@@ -9,7 +9,7 @@
 
 require_once 'core/Game.php';
 require_once 'vendor/autoload.php';
-error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
 
 $dotenv = Dotenv\Dotenv::createImmutable(dirname('.env'));
 $dotenv->load();
@@ -24,7 +24,7 @@ $isPawnPick = false;
 $message = $moveErr = $stateErr = '';
 $extended_message = "";
 
-if ($_POST['newGame']) {
+if (isset($_POST['newGame'])) {
     $game = new Game();
     $message = 'New Game started! ';
     $extended_message = $game->getFen();
@@ -65,7 +65,7 @@ if ($_POST['move']) {
     }
 }
 
-if ($_POST['promotionFigure']) {
+if (isset($_POST['promotionFigure'])) {
     $game_serialized = json_decode($redis->get('game'));
     $game = unserialize($game_serialized);
     if ($game) {
@@ -82,7 +82,7 @@ if ($_POST['promotionFigure']) {
     }
 
 }
-if ($_POST['getState']) {
+if (isset($_POST['getState'])) {
     $game_serialized = json_decode($redis->get('game'));
     $game = unserialize($game_serialized);
     if ($game) {

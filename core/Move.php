@@ -1,5 +1,5 @@
 <?php
-foreach (glob("exceptions/*.php") as $filename) {
+foreach (glob("core/exceptions/*.php") as $filename) {
     require_once $filename;
 }
 
