@@ -1,5 +1,5 @@
 # Chess API
-Backend for playing a chess game.
+Backend for playing a chess game.  <br  />
 Used [Forsyth–Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) to describe game state.  <br  />
 Figures are encoded in algebraic chess notation (Queen - q, King - k, knight - n, etc.)
 
@@ -20,7 +20,7 @@ Draw situations are not implemented.
 
 5. After all your actions you will get feedback in the OUTPUT section
 
-6. If you want to get messages from API in json format, run index_json.  Keys are : 
+6. If you want to get messages from API in json format, run index_json.php.  Keys are : 
     - newGame(1/0);
     - move('your_move');
     - getState(1/0);
